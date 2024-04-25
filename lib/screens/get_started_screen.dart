@@ -14,7 +14,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xffB0BEC5),
+        backgroundColor: const Color(0xff01579B),
         body: Column(
           children: [
             ClipRRect(
@@ -37,8 +37,8 @@ class _GetStartedPageState extends State<GetStartedPage> {
               child: Text(
                 'Art House',
                 style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.orange,
                     fontSize: 30),
               ),
             ),
@@ -57,6 +57,9 @@ class _GetStartedPageState extends State<GetStartedPage> {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
                       elevation: 20,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)
+                    )
                   ),
                   child: const Text(
                     'Explore now',
